@@ -1,0 +1,56 @@
+
+.canvas {
+    height: 900px;
+    width: 900px;
+    background-color: white;
+    text-align: center;
+    line-height: 900px;
+    font-size: 150px;
+}
+
+.base {
+    height: 220px;
+    width: 220px;
+    background-color: black;
+    border: 5px solid white;
+    position: absolute;
+}
+
+.rect {
+    height: 220px;
+    width: 220px;
+    opacity: 1;
+    background-color: black;
+    border: 5px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+    line-height: 220px;
+    font-size: 75px;
+    color: white;
+    z-index: 1;
+}
+
+.rectTrans {
+    transition: top 0.2s ease, left 0.2s ease;
+}
+
+.content {
+    height: 900px;
+    width: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 900px;
+    font-size: 140px;
+    opacity: 0;
+    color: red;
+    z-index: 2;
+}
+
+* {
+    user-select:none;
+}
