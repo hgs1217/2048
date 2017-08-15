@@ -11,12 +11,8 @@ const ROW = 4,
 
 let canvas,
     content,
-    nums = Array.apply(null, Array(16)).map(function () {
-        return 0;
-    }),
-    numToLoc = Array.apply(null, Array(16)).map(function (item, i) {
-        return i;
-    }),
+    nums = Array.apply(null, Array(16)).map(() => { return 0 }),
+    numToLoc = Array.apply(null, Array(16)).map((item, i) => { return i }),
     rects = [],
     isGameOver = false
 
